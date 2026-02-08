@@ -11,8 +11,11 @@ export const envSchema = z
 
     // URLs
     DEVOPNESS_URL_IMAGES: z.string().url(),
+    DEVOPNESS_URL_LINKEDIN: z.string().url(),
+    DEVOPNESS_URL_SITE: z.string().url(),
     DEVOPNESS_URL_SIGNUP: z.string().url(),
     DEVOPNESS_URL_WEB_APP: z.string().url(),
+    DEVOPNESS_URL_YOUTUBE: z.string().url(),
 
     // Google Tag Manager
     GOOGLE_TAG_MANAGER_ID: z.string().min(1).startsWith("GTM-").optional(),
